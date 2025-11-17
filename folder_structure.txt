@@ -1,0 +1,54 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 6664-FFFE
+D:.
+|   folder_structure.txt
+|   pom.xml
+|   
++---.github
+|   \---workflows
+|           ci.yml
+|           
++---src
+|   +---main
+|   |   \---java
+|   |       \---com
+|   |           +---app
+|   |           +---example
+|   |           |   \---inventory
+|   |           |       +---app
+|   |           |       |       Main.java
+|   |           |       |       
+|   |           |       +---model
+|   |           |       |       Product.java
+|   |           |       |       
+|   |           |       +---repository
+|   |           |       |       ProductRepository.java
+|   |           |       |       
+|   |           |       \---service
+|   |           |               ProductService.java
+|   |           |               
+|   |           +---model
+|   |           +---repository
+|   |           \---service
+|   \---test
+|       \---java
+|           +---com
+|           |   \---example
+|           |       \---inventory
+|           |           \---service
+|           |                   InMemoryProductRepository.java
+|           |                   LowStockTest.java
+|           |                   ProductServiceTest.java
+|           |                   
+|           \---service
+\---target
+    +---classes
+    +---generated-sources
+    |   \---annotations
+    \---maven-status
+        \---maven-compiler-plugin
+            \---compile
+                \---default-compile
+                        createdFiles.lst
+                        inputFiles.lst
+                        
