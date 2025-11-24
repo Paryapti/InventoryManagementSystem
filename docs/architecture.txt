@@ -1,0 +1,22 @@
+                          Inventory Management System - Architecture
+
+   +----------------+         +----------------------+        +--------------+
+   |   Console(UI)  | ----->  |    Service Layer     | <----- |  CLI Handlers |
+   |  (main app)    |         |  (ProductService)    |        +--------------+
+   +----------------+         +----------------------+ 
+           |                          |
+           |                          |
+           v                          v
+     +-----------+             +-----------------+
+     |  Model    | <---------> | Repository      |
+     | (Product) |             | Interface       |
+     +-----------+             +-----------------+
+                                    |
+                                    v
+                              +-----------------+
+                              | InMemoryRepo    |
+                              +-----------------+
+
+  Tests (src/test/java)  --->  exercise Service & Repository
+  Docs (/docs)            --->  Acceptance Criteria, Testing Quadrants
+  CI (GitHub Actions)     --->  Runs mvn test, builds, and reports
